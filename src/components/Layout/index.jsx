@@ -8,6 +8,8 @@ const Layout = ({ children }) => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  console.log(toggle);
   return (
     <div className="bg-[#F7F8FA] w-full overflow-hidden">
       <Header handleToggle={handleToggle} toggle={toggle} />

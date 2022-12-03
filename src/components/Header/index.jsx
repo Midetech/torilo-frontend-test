@@ -11,7 +11,7 @@ const Header = ({ handleToggle, toggle }) => {
       style={{ boxShadow: " 0px 4px 10px rgba(79, 79, 79, 0.07)" }}
     >
       <div className="flex items-center lg:gap-24 md:gap-10  gap-6">
-        {!toggle ? (
+        {toggle ? (
           <p className="font-Roboto text-[24px] leading-[28px] text-[#1875F0] font-black">
             TransMonitor
           </p>
@@ -20,7 +20,7 @@ const Header = ({ handleToggle, toggle }) => {
             onClick={handleToggle}
             src={open}
             alt="open-icon"
-            className="h-5 w-5 opacity-50 lg:hidden md:hidden block "
+            className="h-5 w-5  lg:hidden md:hidden block "
           />
         )}
         <div

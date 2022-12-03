@@ -14,8 +14,8 @@ const Sidebar = ({ handleToggle, toggle }) => {
   return (
     <div
       className={`${
-        toggle ? "  hidden " : "block"
-      } fixed z-10 bottom-0 w-[210px] top-14 lg:w-[260px] bg-white lg:relative pt-10 lg:top-12 md:top-12 lg:flex item-center flex-col  gap-5`}
+        toggle ? "block " : "hidden"
+      }  fixed z-10 bottom-0 w-[210px] top-14 lg:w-[260px] bg-white lg:relative pt-10 lg:top-12 md:top-12 lg:flex item-center flex-col  gap-5`}
     >
       <img
         onClick={handleToggle}
