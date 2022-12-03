@@ -177,13 +177,13 @@ function App() {
 
         <div
           datatype="table-top"
-          className="flex flex-col lg:justify-start justify-between items-start gap-8 md:gap-2"
+          className="flex flex-col lg:justify-start justify-between items-start gap-2 md:gap-2"
         >
           <p className="text-[36px] leading-[48px]">Payments</p>
           <div className="flex lg:justify-between justify-between items-center lg:w-3/4 md:w-full md:justify-start  md:gap-12 w-full">
             <div
               datatype="pagination"
-              className="flex items-center gap-1 md:text-[12px] lg:text-[14px] text-[11px]"
+              className="flex items-center gap-1 md:text-[12px] lg:text-[14px] text-[13px]"
             >
               <p>Showing</p>
               <select>
