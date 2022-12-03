@@ -19,9 +19,9 @@ const Sidebar = ({ toggle }) => {
         Generate Invoice
       </button>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 mt-5 lg:mt-0 md:mt-0">
         {links.map((item, index) => (
-          <div key={index} className="flex  gap-2 flex-col text-[#647787]">
+          <div key={index} className="flex  gap-4 flex-col text-[#647787]">
             <p className="text-[11px] leading-[15px] pl-5">{item.section}</p>
 
             {item.subLinks.map((link, index) => (
