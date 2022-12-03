@@ -87,7 +87,7 @@ function App() {
             className={` bg-white  flex flex-col justify-between lg:w-4/5  md:h-[230px] lg:h-auto h-[210px]  md:w-full relative`}
           >
             <div className="flex justify-between items-center p-2 lg:p-5 md:p-5">
-              <p className="text-[10px] font-Roboto">
+              <p className="text-[10px] lg:text-[16px] md:text-[16px] font-Roboto">
                 <strong>Today: {new Date().toDateString()}</strong>
               </p>
               <div className="w-[138px] h-[31px] rounded-[4.25px] border border-[#DDE0E3] flex justify-between items-center px-2">
