@@ -8,13 +8,21 @@ import order from "../../assets/icons/order.svg";
 import orderFulfilled from "../../assets/icons/order-fulfilled.svg";
 import orderPending from "../../assets/icons/order-pending.svg";
 import manual from "../../assets/icons/manual.svg";
-const Sidebar = ({ toggle }) => {
+import close from "../../assets/icons/close.svg";
+
+const Sidebar = ({ handleToggle, toggle }) => {
   return (
     <div
       className={`${
         toggle ? "  hidden " : "block"
-      } fixed z-10 bottom-0 w-[210px] top-10 lg:w-[260px] bg-white lg:relative pt-10 lg:top-12 md:top-12 lg:flex item-center flex-col  gap-5`}
+      } fixed z-10 bottom-0 w-[210px] top-14 lg:w-[260px] bg-white lg:relative pt-10 lg:top-12 md:top-12 lg:flex item-center flex-col  gap-5`}
     >
+      <img
+        onClick={handleToggle}
+        src={close}
+        alt="open-icon"
+        className="h-5 w-5 opacity-50 lg:hidden md:hidden block absolute top-2 right-2 cursor-pointer"
+      />
       <button className="h-[33px] w-[163px] bg-[#27AE60] rounded-[30px] text-white uppercase ml-5 text-[12px] leading-[14px] font-Roboto font-black ">
         Generate Invoice
       </button>

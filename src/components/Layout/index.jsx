@@ -10,9 +10,9 @@ const Layout = ({ children }) => {
   };
   return (
     <div className="bg-[#F7F8FA] w-full overflow-hidden">
-      <Header handleToggle={handleToggle} />
+      <Header handleToggle={handleToggle} toggle={toggle} />
       <div className="flex w-full">
-        <Sidebar toggle={toggle} />
+        <Sidebar toggle={toggle} handleToggle={handleToggle} />
         <main className="bg-transparent h-screen w-full overflow-scroll">
           {children}
         </main>

@@ -2,23 +2,32 @@ import React from "react";
 import searchIcon from "../../assets/icons/search.svg";
 import bellIcon from "../../assets/icons/bell.svg";
 import profilePicture from "../../assets/images/profile-picture.png";
+import open from "../../assets/icons/open.svg";
 
-const Header = ({ toggle, handleToggle }) => {
+const Header = ({ handleToggle, toggle }) => {
   return (
     <div
       className="h-[60px] bg-white z-50 fixed px-2 lg:px-5 md:px-5 right-0 left-0 flex items-center  justify-between"
       style={{ boxShadow: " 0px 4px 10px rgba(79, 79, 79, 0.07)" }}
     >
-      <div className="flex items-center lg:gap-24 md:gap-10">
-        <p
-          className="font-Roboto text-[24px] leading-[28px] text-[#1875F0] font-black"
-          onClick={handleToggle}
-        >
-          TransMonitor
-        </p>
+      <div className="flex items-center lg:gap-24 md:gap-10  gap-6">
+        {!toggle ? (
+          <p className="font-Roboto text-[24px] leading-[28px] text-[#1875F0] font-black">
+            TransMonitor
+          </p>
+        ) : (
+          <img
+            onClick={handleToggle}
+            src={open}
+            alt="open-icon"
+            className="h-5 w-5 opacity-50 lg:hidden md:hidden block "
+          />
+        )}
         <div
           datatype="search"
-          className="lg:flex md:flex hidden items-center gap-2 lg:w-[336px] md:w-[96px]"
+          className={`${
+            toggle ? "flex" : "hidden"
+          } lg:flex md:flex items-center gap-2 lg:w-[336px] md:w-[96px] w-[120px]`}
         >
           <img src={searchIcon} alt="search-icon" />
           <input
