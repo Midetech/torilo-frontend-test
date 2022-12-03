@@ -3,7 +3,6 @@ import searchIcon from "../../assets/icons/search.svg";
 import bellIcon from "../../assets/icons/bell.svg";
 import profilePicture from "../../assets/images/profile-picture.png";
 import open from "../../assets/icons/open.svg";
-
 const Header = ({ handleToggle, toggle }) => {
   return (
     <div
@@ -12,17 +11,21 @@ const Header = ({ handleToggle, toggle }) => {
     >
       <div className="flex items-center lg:gap-24 md:gap-10  gap-6">
         {toggle ? (
-          <p className="font-Roboto text-[24px] leading-[28px] text-[#1875F0] font-black">
-            TransMonitor
-          </p>
-        ) : (
           <img
             onClick={handleToggle}
             src={open}
             alt="open-icon"
             className="h-5 w-5  lg:hidden md:hidden block "
           />
+        ) : (
+          <p className="font-Roboto text-[24px] leading-[28px] text-[#1875F0] font-black">
+            TransMonitor
+          </p>
         )}
+
+        <p className="font-Roboto text-[24px] leading-[28px] text-[#1875F0] font-black hidden lg:block md:block">
+          TransMonitor
+        </p>
         <div
           datatype="search"
           className={`${

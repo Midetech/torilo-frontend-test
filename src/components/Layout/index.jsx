@@ -3,13 +3,12 @@ import Header from "../Header";
 import Sidebar from "../Sidebar";
 
 const Layout = ({ children }) => {
-  const [toggle, setToggle] = React.useState(false);
+  const [toggle, setToggle] = React.useState(true);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
-  console.log(toggle);
   return (
     <div className="bg-[#F7F8FA] w-full overflow-hidden">
       <Header handleToggle={handleToggle} toggle={toggle} />
