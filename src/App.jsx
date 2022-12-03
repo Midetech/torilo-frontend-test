@@ -105,7 +105,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between p-5  absolute right-0 left-0 lg:top-[5rem] md:top-[4rem]  top-[4.5rem]">
+            <div className="flex justify-between p-5  absolute right-0 left-0 lg:top-[5rem] md:top-[4rem]  top-[3.5rem]">
               <p className="font-bold">Jan</p>
               <div className="border md:h-[120px] lg:h-[200px] h-[95px] w-[1.4px] border-[#CFE8FB]"></div>
               <p className="font-bold">Feb</p>
