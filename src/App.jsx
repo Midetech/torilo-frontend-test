@@ -16,6 +16,7 @@ function App() {
   return (
     <Layout>
       <div className="lg:p-8 p-2 md:p-4 flex flex-col gap-10 md:gap-5 lg:mt-16 md:mt-14 w-full overflow-x-hidden  mt-16">
+        {/* Mertics card begins here */}
         <div
           datatype="metrics-card"
           className="flex justify-between w-full lg:gap-8 lg:flex-row  md:flex-col md:gap-1 md:w-full flex-col gap-1"
@@ -77,7 +78,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        {/* This  is where chart section starts from */}
         <div
           datatype="chart-cards"
           className=" flex gap-4 w-full md:flex-col  lg:flex-row flex-col"
@@ -174,7 +175,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        {/* Table top actions here */}
         <div
           datatype="table-top"
           className="flex flex-col lg:justify-start justify-between items-start gap-2 md:gap-2"
@@ -237,7 +238,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        {/* Table that displays  the payments information */}
         <div
           datatype="data-table"
           className="lg:w-full md:overflow-y-scroll md:w-[540px]  w-full overflow-y-scroll"
@@ -320,7 +321,7 @@ function App() {
             </tbody>
           </table>
         </div>
-
+        {/* Pagination section */}
         <div datatype="footer" className="flex  justify-between">
           <div className="text-[14px]">Showing 1 to 10 of 500 entries</div>
 
