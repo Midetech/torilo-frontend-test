@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <Header handleToggle={handleToggle} toggle={toggle} />
       <div className="flex w-full">
         <Sidebar toggle={toggle} handleToggle={handleToggle} />
-        <main className="bg-transparent h-screen w-full overflow-scroll">
+        <main className="bg-transparent h-screen w-full overflow-scroll md:ml-[13rem] lg:ml-0">
           {children}
         </main>
       </div>

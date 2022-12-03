@@ -31,16 +31,20 @@ const Header = ({ handleToggle, toggle }) => {
         >
           <img src={searchIcon} alt="search-icon" />
           <input
-            placeholder="Search"
+            placeholder="Search..."
             className="bg-transparent outline-none w-full"
           />
         </div>
       </div>
 
-      <div className="flex justify-center items-center lg:gap-16 md:gap-8  gap-2">
+      <div className="flex justify-center items-center lg:gap-16 md:gap-8  gap-4">
         <p className="text-[14px] leading-[19px] text-[#647787]">Support</p>
         <p className="text-[14px] leading-[19px] text-[#647787]">FAQs</p>
-        <div>
+        <div className="relative">
+          <div className="bg-[#1860EC] w-4 h-4 flex justify-center items-center text-[10px] leading-[3px] text-white rounded-full absolute bottom-2 left-2">
+            {" "}
+            8
+          </div>
           <img src={bellIcon} alt="notification-icon" />
         </div>
 
